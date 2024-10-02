@@ -125,6 +125,38 @@ void main() {
           expect(box0.height, null);
         },
       );
+      test(
+        'Ensure the edgeInsetAll returns correct uniform edgeInsets',
+        () {
+          final inset = 20.edgeInsetAll;
+          expect(inset.left, 20.0);
+          expect(inset.top, 20.0);
+          expect(inset.right, 20.0);
+          expect(inset.bottom, 20.0);
+        },
+      );
+
+      test(
+        'Ensure the edgeInsetHorizontal returns correct horizontal edgeInsets',
+        () {
+          final inset = 30.edgeInsetHorizontal;
+          expect(inset.left, 30.0);
+          expect(inset.right, 30.0);
+          expect(inset.top, 0.0);
+          expect(inset.bottom, 0.0);
+        },
+      );
+
+      test(
+        'Ensure the edgeInsetVertical returns correct vertical edgeInsets',
+        () {
+          final inset = 15.edgeInsetVertical;
+          expect(inset.top, 15.0);
+          expect(inset.bottom, 15.0);
+          expect(inset.left, 0.0);
+          expect(inset.right, 0.0);
+        },
+      );
     },
   );
 }

@@ -63,6 +63,9 @@ In this package, right now we have the following extension methods:
 - **Extensions on num:**
     - SizedBox hSizedBox
     - SizedBox wSizedBox
+    - EdgeInsets edgeInsetAll
+    - EdgeInsets edgeInsetHorizontal
+    - EdgeInsets edgeInsetVertical
     <br>
 - **Extension on Iterable**
     - `Iterable<Widget> separator(Widget element)`
